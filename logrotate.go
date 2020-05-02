@@ -269,7 +269,7 @@ func FilterFileList(path, pat string) ([]string, error) {
 
 // getTimeStamp get time stamp
 func getTimeStamp() string {
-	now := time.Now().Format("2006.01.02.15.04.05")
+	now := time.Now().Format("2006.01.02 15.04.05")
 	timeSlot := strings.Replace(now, ".", "-", -1)
 	return timeSlot
 }
